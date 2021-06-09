@@ -18,7 +18,7 @@ def find_relevant():
             #enum
         #TODO:this step can be optimized to not use the next for and file(2)    
         elif i%3 == 2:
-            if a[0].isdigit()  and not a[1].isdigit():
+            if a[0].isdigit()  and a[1]=="нови":
                 news.write(a[0])
             news.write("\n")
         i += 1
