@@ -14,7 +14,7 @@ def crawl():
     
     for line in covnews:
         nodes.append(line.split()[0])
-    #TODO: try/except for errors
+    #TODO: check for errors
     for node in nodes:
         ur = url+str(node)
         req = Request(ur, headers={'User-Agent': 'Mozilla/5.0'})
